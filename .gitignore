@@ -1,0 +1,8 @@
+/.vscode
+/.venv
+__pycache__
+/pyrightconfig.json
+/ai_history.jsonl
+
+# runtime config (contains secrets like API keys)
+config.toml
