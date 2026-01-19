@@ -85,9 +85,9 @@ model = "gpt-4.1-mini"
 - monitor：mss 的 monitor 索引（通常 1 是主屏）
 - backend：抓屏后端
   - auto：自动选择
+  - spectacle：调用外部命令 spectacle 截图（性能较差，但在 Linux 环境中最稳定）
   - mss：走 mss（在部分 Wayland 环境可能失败）
   - qt：走 Qt 截图（兼容性依环境而定）
-  - spectacle：调用外部命令 spectacle 截图（Wayland 下通常更稳，但性能较差）
 
 ### [ocr]
 

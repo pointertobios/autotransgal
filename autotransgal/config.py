@@ -340,7 +340,7 @@ model = "deepseek-chat"
 # mss 的 monitor 索引（通常 1 是主屏）
 monitor = 1
 
-backend = "spectacle"
+backend = "mss"
 
 [ocr]
 # 过滤太小的检测框（像素面积）
