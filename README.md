@@ -44,9 +44,11 @@ uv run cli
 
 如果当前目录没有 config.toml，会自动生成一份模板并退出，按提示填写后再运行。
 
-1. 编辑 config.toml，至少填好：
+1. 编辑 config.toml，至少配置好 AI：
 
+- [openai].base_url
 - [openai].api_key
+- [openai].model
 
 1. 再次运行
 
@@ -54,7 +56,9 @@ uv run cli
 uv run cli
 ```
 
-启动后会提示你框选 ROI（若 config.toml 里已有有效的 [ocr].roi_abs 则会直接复用）。
+启动后会提示你框选 ROI，可以框选尽量大的范围，只用来排除屏幕中其它没有用的内容。
+
+若 config.toml 里已有有效的 [ocr].roi_abs 则会直接开始。
 
 ## 配置说明（config.toml）
 
